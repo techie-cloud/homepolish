@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { Client } = require('pg')
 
-const connectionString="postgresql://postgres:123123@localhost:5432/form";
+const connectionString=process.env.DATABASE_URL;
 const client = new Client({
   connectionString: connectionString,
 })
