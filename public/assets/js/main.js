@@ -189,9 +189,9 @@ window.onload = () => {
         stage(3);
     }
 
-    button['sub_stage_5'].onclick = () => {
+   /* button['sub_stage_5'].onclick = () => {
         stage(6);
-    }
+    }*/
 
     button['sub_stage_6'].onclick = () => {
         stage(7);
@@ -364,8 +364,8 @@ function getFormData() {
     //stage 9 input
 
     //formData['estimated_amount'] = document.getElementById("s9-estimated-amount").value;
-    console.log(formData);
-    /*$.ajax({
+    //console.log(formData);
+    $.ajax({
         url: "form",
         type: "post",
         data: formData,
@@ -373,7 +373,7 @@ function getFormData() {
             //console.log(data);
             stage(12)
         }
-    })*/
+    })
 }
 
 

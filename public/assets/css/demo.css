@@ -25,6 +25,14 @@ body {
     background-color: #CCCCCC;
 }
 
+.btn{
+    background-color: white;
+    color:black;
+}
+.btn-dark{
+    background-color: black;
+    color:white;
+}
 .section .wizard-card {
     min-height: inherit;
 }

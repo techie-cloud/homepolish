@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon.ico">
-    <title>House Polish</title>
+    <title>Home Polish</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
@@ -30,8 +30,8 @@
                     <span class="col-md-6" id="form-step-title">
                         CREATE A PROJECT
                     </span>
-                    <span class="col-md-6 text-right">
-                        HOUSE POLISH
+                    <span class="col-md-6 text-right" id="brand-name">
+                        HOME POLISH
                     </span>
                 </div>
             </div>
@@ -156,13 +156,13 @@
                                             </div>
                                         </div>
                                         <!-- <div class='mini-content-container' id='view-stage-4'>
-                                            <p class='mcc-title'>Interior Design <span class='right'>+</span></p>
+                                            <p class='mcc-title'>Interior Design <span class='right'></span></p>
                                             <p class='subtitle left-align'>
                                                 We'll select a designer who best complements you and your needs and be your advocate throughout the shopping process. Have a specific designer in mind. We'll do our best to match you with them.
                                             </p>
                                         </div>
                                         <div class='mini-content-container right' id='view-stage-5'>
-                                            <p class='mcc-title'>Renovation <span class='right'>+</span></p>
+                                            <p class='mcc-title'>Renovation <span class='right'></span></p>
                                             <p class='subtitle left-align'>
                                                 We'll select a designer who best complements you and your needs and be your advocate throughout the shopping process. Have a specific designer in mind. We'll do our best to match you with them.
                                             </p>
@@ -353,13 +353,14 @@
                                             </div>
                                         </div>
                                 </div>
-                                </center>
-                            </div>
-                            <div class='fixed-container form-sub-container' style='display : none;' id='stage-7'>
+                                 <div class='fixed-container form-sub-container' style='display : none;' id='stage-7'>
                                 <center>
                                     <div class='fixed-sub-container'>
                                         <div class='fsc-title'>
                                             Build and Renovation
+                                            <div class="close close-contractor">
+                                                    <span class="glyphicon glyphicon-remove"></span>
+                                                </div>
                                         </div>
                                         <div class='fsc-content'>
                                             <p class='subtitle'><strong>What spaces do you want to renovate?</strong></p>
@@ -388,9 +389,9 @@
                                                                     <span>LIVING ROOM</span>
                                                                 </div>
                                                                 <div class="col-md-6 qty">
-                                                                    <span class="minus bg-dark">-</span>
+                                                                    <span class="minus bg-dark glyphicon glyphicon-minus"></span>
                                                                     <span class="count" id='s7-living-rooms'>0</span>
-                                                                    <span class="plus bg-dark">+</span>
+                                                                    <span class="plus bg-dark glyphicon glyphicon-plus"></span>
                                                                 </div>
                                                             </div>
                                                             <hr />
@@ -408,9 +409,9 @@
                                                                     <span>BEDROOM</span>
                                                                 </div>
                                                                 <div class="col-md-6 qty">
-                                                                    <span class="minus bg-dark">-</span>
+                                                                    <span class="minus bg-dark glyphicon glyphicon-minus"></span>
                                                                     <span class="count" id='s7-bed-rooms'>0</span>
-                                                                    <span class="plus bg-dark">+</span>
+                                                                    <span class="plus bg-dark glyphicon glyphicon-plus"></span>
                                                                 </div>
                                                             </div>
                                                             <hr />
@@ -428,9 +429,9 @@
                                                                     <span>DINING ROOM</span>
                                                                 </div>
                                                                 <div class="col-md-6 qty">
-                                                                    <span class="minus bg-dark">-</span>
+                                                                    <span class="minus bg-dark glyphicon glyphicon-minus"></span>
                                                                     <span class="count" id='s7-dining-rooms'>0</span>
-                                                                    <span class="plus bg-dark">+</span>
+                                                                    <span class="plus bg-dark glyphicon glyphicon-plus"></span>
                                                                 </div>
                                                             </div>
                                                             <hr />
@@ -450,9 +451,9 @@
                                                                     <span>KITCHEN</span>
                                                                 </div>
                                                                 <div class="col-md-6 qty">
-                                                                    <span class="minus bg-dark">-</span>
+                                                                    <span class="minus bg-dark glyphicon glyphicon-minus"></span>
                                                                     <span class="count" id='s7-kitchens'>0</span>
-                                                                    <span class="plus bg-dark">+</span>
+                                                                    <span class="plus bg-dark glyphicon glyphicon-plus"></span>
                                                                 </div>
                                                             </div>
                                                             <hr />
@@ -470,9 +471,9 @@
                                                                     <span>BATHROOM</span>
                                                                 </div>
                                                                 <div class="col-md-6 qty">
-                                                                    <span class="minus bg-dark">-</span>
+                                                                    <span class="minus bg-dark glyphicon glyphicon-minus"></span>
                                                                     <span class="count" id='s7-bathrooms'>0</span>
-                                                                    <span class="plus bg-dark">+</span>
+                                                                    <span class="plus bg-dark glyphicon glyphicon-plus"></span>
                                                                 </div>
                                                             </div>
                                                             <hr />
@@ -490,9 +491,9 @@
                                                                     <span>ENTRYWAY/FOYER</span>
                                                                 </div>
                                                                 <div class="col-md-6 qty">
-                                                                    <span class="minus bg-dark">-</span>
+                                                                    <span class="minus bg-dark glyphicon glyphicon-minus"></span>
                                                                     <span class="count" id='s7-entryways'>0</span>
-                                                                    <span class="plus bg-dark">+</span>
+                                                                    <span class="plus bg-dark glyphicon glyphicon-plus"></span>
                                                                 </div>
                                                             </div>
                                                             <hr />
@@ -512,9 +513,9 @@
                                                                     <span>HOME OFFICES</span>
                                                                 </div>
                                                                 <div class="col-md-6 qty">
-                                                                    <span class="minus bg-dark">-</span>
+                                                                    <span class="minus bg-dark glyphicon glyphicon-minus"></span>
                                                                     <span class="count" id='s7-offices'>0</span>
-                                                                    <span class="plus bg-dark">+</span>
+                                                                    <span class="plus bg-dark glyphicon glyphicon-plus"></span>
                                                                 </div>
                                                             </div>
                                                             <hr />
@@ -532,9 +533,9 @@
                                                                     <span>KIDS/NURSERY</span>
                                                                 </div>
                                                                 <div class="col-md-6 qty">
-                                                                    <span class="minus bg-dark">-</span>
+                                                                    <span class="minus bg-dark glyphicon glyphicon-minus"></span>
                                                                     <span class="count" id='s7-kids'>0</span>
-                                                                    <span class="plus bg-dark">+</span>
+                                                                    <span class="plus bg-dark glyphicon glyphicon-plus"></span>
                                                                 </div>
                                                             </div>
                                                             <hr />
@@ -552,9 +553,9 @@
                                                                     <span>OUTDOOR</span>
                                                                 </div>
                                                                 <div class="col-md-6 qty">
-                                                                    <span class="minus bg-dark">-</span>
+                                                                    <span class="minus bg-dark glyphicon glyphicon-minus"></span>
                                                                     <span class="count" id='s7-outdoor'>0</span>
-                                                                    <span class="plus bg-dark">+</span>
+                                                                    <span class="plus bg-dark glyphicon glyphicon-plus"></span>
                                                                 </div>
                                                             </div>
                                                             <hr />
@@ -571,19 +572,6 @@
                                                     </td>
                                                 </tr>
                                             </table>
-                                            <!-- 
-                                                <div class='input-container half inline-block left'>
-                                                    <p class='form-label'>No. of Home Offices</p>
-                                                    <input type='number' class='form-input' id='s7-offices'>
-                                                </div>
-                                                <div class='input-container half inline-block left'>
-                                                    <p class='form-label'>No. of Kids / Nurseries</p>
-                                                    <input type='number' class='form-input' id='s7-kids'>
-                                                </div>
-                                                <div class='input-container half inline-block left'>
-                                                    <p class='form-label'>No. of Outdoor</p>
-                                                    <input type='number' class='form-input' id='s7-outdoor'>
-                                                </div> -->
                                             <div class='input-container'>
                                                 <input type='button' value='Next' class='form-button' id='sub-stage-7'>
                                             </div>
@@ -591,6 +579,9 @@
                                     </div>
                                 </center>
                             </div>
+                                </center>
+                            </div>
+                           
                         </div>
                     </div>
                 </div> <!-- wizard container -->
