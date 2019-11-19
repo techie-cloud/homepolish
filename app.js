@@ -40,11 +40,11 @@ app.get('/', function(req, res) {
 app.post("/form", (req, res) => {
     data = req.body;
     //console.log(data);
-    client.query("insert into form(phone,type, address, area, art_selection, bathrooms, contacted_before, dining_rooms, entire_location, entryways, estimated_amount, furniture_selection, interior_finishes, kids, kitchens, living_rooms, news, offices, outdoor, project_info, space_type, structural_change, style_guidance, want_connection, zip) VALUES ( '" + data.phone + '" ,"'+data.type + "','" + data.address + "', '" + data.area + "', '" + data.art_selection + "', '" + data.bathrooms + "', '" + data.contacted_before + "', '" + data.dining_rooms + "', '" + data.entire_location + "', '" + data.entryways + "', '" + data.estimated_amount + "', '" + data.furniture_selection + "', '" + data.interior_finishes + "', '" + data.kids + "', '" + data.kitchens + "', '" + data.living_rooms + "', '" + data.news + "', '" + data.offices + "', '" + data.outdoor + "', '" + data.project_info + "', '" + data.space_type + "', '" + data.structural_change + "', '" + data.style_guidance + "', '" + data.want_connection + "', '" + data.zip + "','' ) ", (err, res) => {
+    client.query("insert into form(phone,type, address, area, art_selection, bathrooms, contacted_before, dining_rooms, entire_location, entryways, estimated_amount, furniture_selection, interior_finishes, kids, kitchens, living_rooms, news, offices, outdoor, project_info, space_type, structural_change, style_guidance, want_connection, zip) VALUES ( '" + data.phone + '" ,"'+data.type + "','" + data.address + "', '" + data.area + "', '" + data.art_selection + "', '" + data.bathrooms + "', '" + data.contacted_before + "', '" + data.dining_rooms + "', '" + data.entire_location + "', '" + data.entryways + "', '" + data.estimated_amount + "', '" + data.furniture_selection + "', '" + data.interior_finishes + "', '" + data.kids + "', '" + data.kitchens + "', '" + data.living_rooms + "', '" + data.news + "', '" + data.offices + "', '" + data.outdoor + "', '" + data.project_info + "', '" + data.space_type + "', '" + data.structural_change + "', '" + data.style_guidance + "', '" + data.want_connection + "', '" + data.zip + "','temp' )", (err, doc) => {
         if (err) {
             console.log(err);
         }else{
-            res.json({message:"HomePolish profile done."});
+            res.json({message:"HomePolish profile done.",data:doc});
         }
     });
 
